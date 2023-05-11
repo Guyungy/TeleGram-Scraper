@@ -24,7 +24,7 @@ def banner():
             version : 1.0
         """)
 
-cpass = configparser.RawConfigParser() #666
+cpass = configparser.RawConfigParser() #66611
 cpass.read('config.data')
 
 try:
