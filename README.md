@@ -12,7 +12,7 @@
   </a>
 </p>
 <p align="center">
-  Telegram Group Scrapper
+  Telegram 群组爬取工具
 </p>
 <p align="center">
 </p>
@@ -21,37 +21,30 @@
 ## 依赖
 - telethon
 
-## • API 设置
+## API 设置
 * 打开并登录 http://my.telegram.org 
 * Click on API development tools and fill the required fields.
 * put app name you want & select other in platform Example :
 * copy "api_id" & "api_hash" after clicking create app ( will be used in setup.py )
 
-## • How To Install and Use
+## 如何安装和使用
 
-`$ pkg install -y git python`
+'git clone https://github.com/Guyungy/TeleGram-Scraper'
 
-`$ git clone https://github.com/Guyungy/TeleGram-Scraper`
+$ cd TeleGram-Scraper
 
-`$ cd TeleGram-Scraper`
+安装需求
+$ python3 setup.py -i
 
-* Install requierments
+设置配置文件(apiID, apiHASH)
+$ python3 setup.py -c
 
-`$ python3 setup.py -i`
+生成用户数据
+$ python3 scraper.py
 
-* setup configration file ( apiID, apiHASH )
+(如果更改了名称，则默认为members.csv)
+向收集的数据发送批量短信
+$ python3 smsbot.py members.csv
 
-`$ python3 setup.py -c`
-
-* To Genrate User Data
-
-`$ python3 scraper.py`
-
-* ( members.csv is default if you changed name use it )
-* Send Bulk sms To Collected Data 
-
-`$ python3 smsbot.py members.csv`
-
-* Update Tool
-
-`$ python3 setup.py -u`
+更新工具
+$ python3 setup.py -u
