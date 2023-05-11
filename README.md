@@ -18,9 +18,11 @@
 </p>
 
 ---
+## 依赖
+- telethon
 
-## • API Setup
-* Go to http://my.telegram.org  and log in.
+## • API 设置
+* 打开并登录 http://my.telegram.org 
 * Click on API development tools and fill the required fields.
 * put app name you want & select other in platform Example :
 * copy "api_id" & "api_hash" after clicking create app ( will be used in setup.py )
